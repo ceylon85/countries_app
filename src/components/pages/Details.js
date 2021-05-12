@@ -5,7 +5,7 @@ import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons";
 
 import "./Details.css";
 
-function Detail(props) {
+function Details(props) {
   const { code } = useParams();
   const [countryDetails, setCountryDetails] = useState();
   const [isLoading, setIsLoading] = useState(false);
@@ -16,6 +16,7 @@ function Detail(props) {
       const response = await fetch(
         `https://restcountries.eu/rest/v2/alpha/${code.toLowerCase()}`
       );
+      console.log(response)
       const responseData = await response.json();
       setCountryDetails(responseData);
       setIsLoading(false);
@@ -51,41 +52,41 @@ function Detail(props) {
               <div className="subdetails-container">
                 <div className="subdetails-col-1">
                   <p>
-                    <span className="bolder">Native Name: </span>
+                    <span className="bolder">현지 국가 이름: </span>
                     {countryDetails.nativeName}
                   </p>
                   <p>
-                    <span className="bolder">Population: </span>
+                    <span className="bolder">인구: </span>
                     {countryDetails.population
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
                   </p>
                   <p>
-                    <span className="bolder">Region: </span>
+                    <span className="bolder">지역: </span>
                     {countryDetails.region}
                   </p>
                   <p>
-                    <span className="bolder">Sub Region: </span>
+                    <span className="bolder">세부 지역: </span>
                     {countryDetails.subregion}
                   </p>
                   <p>
-                    <span className="bolder">Capital: </span>
+                    <span className="bolder">수도: </span>
                     {countryDetails.capital}
                   </p>
                 </div>
                 <div className="subdetails-col-2">
                   <p>
-                    <span className="bolder">Top Level Domain: </span>
+                    <span className="bolder">상위 도메인: </span>
                     {countryDetails.topLevelDomain}
                   </p>
                   <p>
-                    <span className="bolder">Currencies: </span>
+                    <span className="bolder">통화: </span>
                     {countryDetails.currencies.length > 1
                       ? countryDetails.currencies.map((c) => c.code + "; ")
                       : countryDetails.currencies[0].code}
                   </p>
                   <p>
-                    <span className="bolder">Languages: </span>
+                    <span className="bolder">언어: </span>
                     {countryDetails.languages.length > 1
                       ? countryDetails.languages.map((lang) => {
                           return lang.name + "; ";
@@ -95,7 +96,7 @@ function Detail(props) {
                 </div>
               </div>
               <div className="border-countries__container">
-                <p className="bolder">Border Countries: </p>
+                <p className="bolder">인접 국가들: </p>
                 <div className="border-countries__list">
                   {countryDetails.borders.map((country) => {
                     return (
@@ -117,4 +118,4 @@ function Detail(props) {
   );
 }
 
-export default Detail;
+export default Details;

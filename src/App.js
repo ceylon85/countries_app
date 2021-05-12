@@ -3,23 +3,29 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Details from "./components/pages/Details";
+import Navigation from "./components/Navigation";
 
 function App() {
   const [mode, setMode] = useState("light");
 
+  const toggleMode = () => {
+    mode === "light" ? setMode("dark") : setMode("light");
+  };
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className={mode === "light" ? "light-mode" : "dark-mode"}>
+        <Navigation toggleMode={toggleMode} mode={mode} />
+
         <Switch>
           <Route path="/" exact>
             <Home mode={mode} />
           </Route>
-          <Route paht="/">
+          <Route path="/detail/:code" exact>
             <Details mode={mode} />
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
