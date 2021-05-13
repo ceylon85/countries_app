@@ -16,7 +16,7 @@ function Details(props) {
       const response = await fetch(
         `https://restcountries.eu/rest/v2/alpha/${code.toLowerCase()}`
       );
-      console.log(response)
+      console.log(response);
       const responseData = await response.json();
       setCountryDetails(responseData);
       setIsLoading(false);

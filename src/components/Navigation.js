@@ -15,7 +15,7 @@ function Navigation(props) {
           {props.mode === "light" ? (
             <FontAwesomeIcon icon={faMoon} />
           ) : (
-            <FontAwesomeIcon icon={faSun} />
+            <FontAwesomeIcon icon={faSun} spin/>
           )}
         <p onClick={props.toggleMode}>
           {props.mode === "light" ? "Dark Mode" : "Light Mode"}
