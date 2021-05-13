@@ -4,11 +4,11 @@ import "./Card.css";
 
 function Card(props) {
   return (
-    <div className={`card card-${props.mode}`}>
-      <div className="card-image">
+    <div className={`card card__${props.mode}`}>
+      <div className="card__image">
         <img src={props.flag} alt={`${props.name} Flag`} />
       </div>
-      <div className="card-body">
+      <div className="card__body">
         <h5>{props.name}</h5>
         <p>
           <span className="bolder">인구: </span>

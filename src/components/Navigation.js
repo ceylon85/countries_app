@@ -6,12 +6,12 @@ import "./Navigation.css";
 
 function Navigation(props) {
   return (
-    <nav className={`navbar nav-${props.mode}`}>
-      <div className="nav-content">
-        <div className="nav-brand">
+    <nav className={`navbar nav__${props.mode}`}>
+      <div className="nav__content">
+        <div className="nav__brand">
           <h3>Where in the world?</h3>
         </div>
-        <div className="style-mode">
+        <div className="style__mode">
           {props.mode === "light" ? (
             <FontAwesomeIcon icon={faMoon} />
           ) : (

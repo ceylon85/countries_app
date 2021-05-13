@@ -4,13 +4,13 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.light-mode {
+.light__mode {
   min-height: 100vh;
   background: hsl(0, 0%, 98%);
   color: hsl(200, 15%, 8%);
 }
 
-.dark-mode {
+.dark__mode {
   min-height: 100vh;
   background: hsl(207, 26%, 17%);
   color: hsl(0, 0%, 100%);

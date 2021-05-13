@@ -6,7 +6,7 @@ import "./SearchFilter.css";
 
 function SearchFilter(props) {
   return (
-    <div className="search-filter__container">
+    <div className="searchFilter__container">
       <div className="searchbar__container">
         <SearchBar
           placeholder="Search for a country..."

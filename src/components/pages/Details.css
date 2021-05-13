@@ -5,7 +5,7 @@
     padding-bottom: 40px;
 }
 
-.back-btn{
+.backBtn{
     width: 50px;
     padding: 5px 25px;
     font-size: .8rem;
@@ -15,32 +15,32 @@
     cursor: pointer;
 }
 
-.back-btn a, .border-country a{
+.backBtn a, .borderCountry a{
     text-decoration: none;
 }
 
-.back-btn-light, .border-country-light{
+.backBtn__light, .borderCountry__light{
     background: #fff;
 }
 
-.back-btn-dark, .border-country-dark{
+.backBtn__dark, .borderCountry__dark{
     background: hsl(209, 23%, 22%);
 }
 
-.back-btn-dark a, .border-country-dark a{
+.backBtn__dark a, .borderCountry__dark a{
     color: #fff;
 }
 
 
-.back-btn-light a, .border-country-light a{
+.backBtn__light a, .borderCountry__light a{
     color: hsl(200, 15%, 8%)
 }
 
-.back-btn:hover{
+.backBtn:hover{
     transform: scale(1.05);
 }
 
-.country-details__container{
+.countryDetails__container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -48,11 +48,11 @@
     padding-top: 40px;
 }
 
-.country-details__img-container{
+.countryDetails__img{
     width: 40%;
 }
 
-.country-details__img-container img{
+.countryDetails__img img{
     width: 100%;
 }
 
@@ -61,7 +61,7 @@
     text-align: left;
 }
 
-.subdetails-container{
+.subdetails__container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,11 +69,11 @@
     font-size: .7rem;
 }
 
-.subdetails-col-2{
+.subdetails__col-2{
     margin-left: 60px;
 }
 
-.border-countries__container{
+.borderCountries__container{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -81,17 +81,17 @@
     font-size: .8rem;
 }
 
-.border-countries__container p{
+.borderCountries__container p{
     margin: 5px 5px 5px 0;
 }
 
-.border-countries__list{
+.borderCountries__list{
     display: flex;
     flex-wrap: wrap;
     margin-left: -5px;
 }
 
-.border-country{
+.borderCountry{
     font-size: .6rem;
     margin: 3px 5px;
     padding: 4px 6px;
@@ -102,14 +102,14 @@
 
 @media(max-width: 991px){
 
-    .subdetails-container{
+    .subdetails__container{
         flex-direction: column;
     }
-    .subdetails-col-2{
+    .subdetails__col-2{
         margin-left: 0px;
     }
 
-    .country-details__img-container{
+    .countryDetails__img{
         width: 50%;
     }
     .details__container{
@@ -119,7 +119,7 @@
 }
 
 @media(max-width: 768px){
-    .country-details__img-container{
+    .countryDetails__img{
         width: 60%;
     }
     .details__container{
@@ -129,12 +129,12 @@
 }
 
 @media(max-width: 558px){
-    .country-details__container{
+    .countryDetails__container{
         flex-direction: column;
         justify-content: flex-start;
     }
 
-    .country-details__img-container, .details__container{
+    .countryDetails__img, .details__container{
         width: 90%;
     }
 }

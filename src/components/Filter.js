@@ -19,17 +19,17 @@ function Filter(props) {
   };
 
   return (
-    <div className="filter-component relative">
+    <div className="filter__component relative">
       <div
-        className={`main-filter-box filter-${props.mode}`}
+        className={`mainFilter__box filter__${props.mode}`}
         onClick={toggleDropDown}
       >
         {selectedRegion ? selectedRegion : "Filter by Region"}
         <FontAwesomeIcon icon={faChevronDown} />
       </div>
       {dropdownIsOpen && (
-        <div className={`dropdown__container filter-${props.mode}`}>
-          <ul className={`dropdown-options dropdown-options-${props.mode}`}>
+        <div className={`dropdown__container filter__${props.mode}`}>
+          <ul className={`dropdown__options dropdown__options__${props.mode}`}>
             {selectedRegion && (
               <li onClick={() => selectRegionHandler(false)}>All</li>
             )}

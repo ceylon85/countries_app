@@ -9,7 +9,7 @@ function SearchBar(props) {
     props.filterByInput(e.target.value);
   };
   return (
-    <div className={`relative searchbar-component searchbar-${props.mode}`}>
+    <div className={`relative searchbar__component searchbar__${props.mode}`}>
       <input
         type="search"
         placeholder={props.placeholder}

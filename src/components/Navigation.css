@@ -4,16 +4,16 @@
     box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2);
 }
 
-.nav-light {
+.nav__light {
     background: #fff;
 }
 
-.nav-dark {
+.nav__dark {
     background: hsl(209, 23%, 22%);
     color: hsl(0, 0%, 100%);
 }
 
-.nav-content {
+.nav__content {
     width: 80%;
     margin: auto;
     height: 100%;
@@ -24,7 +24,7 @@
     flex-wrap: nowrap;
 }
 
-.style-mode {
+.style__mode {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -32,11 +32,11 @@
     font-size: .8rem;
 }
 
-.style-mode p {
+.style__mode p {
     margin: 0;
     font-weight: 600;
 }
 
-.style-mode svg {
+.style__mode svg {
     margin-right: 6px;
 }

@@ -13,7 +13,7 @@ function App() {
   };
   return (
     <Router>
-      <div className={mode === "light" ? "light-mode" : "dark-mode"}>
+      <div className={mode === "light" ? "light__mode" : "dark__mode"}>
         <Navigation toggleMode={toggleMode} mode={mode} />
 
         <Switch>

@@ -36,21 +36,21 @@ function Details(props) {
       {isLoading && <h1>Loading...</h1>}
       {countryDetails && !isLoading && (
         <div>
-          <div className="back-link__container">
-            <div className={`back-btn back-btn-${props.mode}`}>
+          <div className="backLink__container">
+            <div className={`backBtn backBtn__${props.mode}`}>
               <Link to="/" style={{ width: "100%" }}>
                 <FontAwesomeIcon icon={faLongArrowAltLeft} /> Back
               </Link>
             </div>
           </div>
-          <div className="country-details__container">
-            <div className="country-details__img-container">
+          <div className="countryDetails__container">
+            <div className="countryDetails__img">
               <img src={countryDetails.flag} alt={countryDetails.name} />
             </div>
             <div className="details__container">
               <h2>{countryDetails.name}</h2>
-              <div className="subdetails-container">
-                <div className="subdetails-col-1">
+              <div className="subdetails__container">
+                <div className="subdetails__col-1">
                   <p>
                     <span className="bolder">현지 국가 이름: </span>
                     {countryDetails.nativeName}
@@ -74,7 +74,7 @@ function Details(props) {
                     {countryDetails.capital}
                   </p>
                 </div>
-                <div className="subdetails-col-2">
+                <div className="subdetails__col-2">
                   <p>
                     <span className="bolder">상위 도메인: </span>
                     {countryDetails.topLevelDomain}
@@ -95,13 +95,13 @@ function Details(props) {
                   </p>
                 </div>
               </div>
-              <div className="border-countries__container">
+              <div className="borderCountries__container">
                 <p className="bolder">인접 국가들: </p>
-                <div className="border-countries__list">
+                <div className="borderCountries__list">
                   {countryDetails.borders.map((country) => {
                     return (
                       <div
-                        className={`border-country border-country-${props.mode}`}
+                        className={`borderCountry borderCountry__${props.mode}`}
                         key={country}
                       >
                         <Link to={`/detail/${country}`}>{country}</Link>
