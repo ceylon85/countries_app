@@ -1,5 +1,5 @@
 # Frontend Mentor - REST Countries API with color theme switcher
-
+![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
 ### [Frontend Mentor](https://www.frontendmentor.io) challenges 
 #
 ## The challenge
@@ -15,5 +15,8 @@
 - Light Mode || Dark Mode 색상 전환 
 #
 
-### `Deploy` to Vercel
+### Vercel을 이용해 `배포`
 Link to ***[View](https://countries-app-eight.vercel.app/)***
+
+### 아쉬운 점
+details page에 지도를 통해 표시하는 것을 하지 못한 부분이 아쉽다. 

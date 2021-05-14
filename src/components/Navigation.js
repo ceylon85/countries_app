@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import { faSun } from "@fortawesome/free-regular-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 import "./Navigation.css";
 
@@ -13,7 +14,7 @@ function Navigation(props) {
         </div>
         <div className="style__mode">
           {props.mode === "light" ? (
-            <FontAwesomeIcon icon={faMoon} />
+            <FontAwesomeIcon icon={faMoon} fill />
           ) : (
             <FontAwesomeIcon icon={faSun} spin/>
           )}

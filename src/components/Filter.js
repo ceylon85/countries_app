@@ -48,6 +48,9 @@ function Filter(props) {
             {selectedRegion !== "Oceania" && (
               <li onClick={() => selectRegionHandler("Oceania")}>Oceania</li>
             )}
+            {selectedRegion !== "Polar" && (
+              <li onClick={() => selectRegionHandler("Polar")}>Polar</li>
+            )}
           </ul>
         </div>
       )}
