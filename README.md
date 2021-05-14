@@ -17,6 +17,3 @@
 
 ### Vercel을 이용해 `배포`
 Link to ***[View](https://countries-app-eight.vercel.app/)***
-
-### 아쉬운 점
-details page에 지도를 통해 표시하는 것을 하지 못한 부분이 아쉽다. 
