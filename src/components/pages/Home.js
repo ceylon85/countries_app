@@ -22,7 +22,7 @@ function Home(props) {
   const fetchCountries = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("https://restcountries.eu/rest/v2/all");
+      const response = await fetch("https://restcountries.com/v2/all");
       const responseData = await response.json();
       setCountries(responseData);
       setFilteredCountries(responseData);

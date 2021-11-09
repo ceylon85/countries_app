@@ -4,7 +4,7 @@
 #
 ## The challenge
 
-`Challenge`는 [REST Countries API](https://restcountries.eu)와 통합하여 국가 데이터를 가져와 디자인처럼 표시하는 것을 목표로 한다.
+`Challenge`는 [REST Countries API](https://restcountries.com)와 통합하여 국가 데이터를 가져와 디자인처럼 표시하는 것을 목표로 한다.
 #
 #### 다음의 기능를 포함한다.
 - API를 통해 모든 국가보기
@@ -17,3 +17,5 @@
 
 ### Vercel을 이용해 `배포`
 Link to ***[View](https://countries-app-eight.vercel.app/)***
+
+build 명령어를 사용하지 않아도 Github에 연동시켜놓으면 master branch를 commit 하면 자동으로 vercel에 build 되어 수정 내용이 변경되어 배포되어진다.
